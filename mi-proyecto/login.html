@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .log {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+            text-align: center;
+        }
+        input,button{
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+        button{
+            background-color: #667eea;
+            color: white;
+            cursor: pointer;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        button:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+<div class="log">
+    <h2>Iniciar Sesión</h2>
+    <input type="text" id="usuario" placeholder="Nombre de Usuario" required>
+    <input type="password" id="cont" placeholder="Contraseña" required>
+    <button onclick="login()"><a href="foro.html">Entrar</a></button>
+    <button><a href="registro.html">Registrarse</a></button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

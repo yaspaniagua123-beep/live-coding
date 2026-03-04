@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Registro</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contorno {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input:focus {
+            border-color: #667eea;
+            outline: none;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-pri {
+            background-color: #667eea;
+            color: white;
+        }
+
+        .btn-pri:hover {
+            background-color: #764ba2;
+        }
+
+        .btn-sec {
+            background-color: #f1f1f1;
+            color: #333;
+        }
+
+        .btn-sec:hover {
+            background-color: #ddd;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+<div class="contorno">
+        <h2>Crear Cuenta</h2>
+        <input type="text" id="usuario" placeholder="Nombre de usuario" required>
+        <input type="email" id="cor" placeholder="Correo electrónico" required>
+        <input type="password" id="cont" placeholder="Contraseña" required>
+        <button type="submit" class="btn btn-pri" onclick="registrar()">Registrarse</button>
+        <p>¿Ya tienes cuenta?</p>
+        <a href="login.html"><button class="btn btn-sec">Ir a login</button></a>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
